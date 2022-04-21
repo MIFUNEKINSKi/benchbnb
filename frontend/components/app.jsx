@@ -15,6 +15,9 @@ const App = () => (
         <h1>Bench BnB</h1>
       </Link>
       <GreetingContainer />
+      <Switch>
+          <AuthRoute exact path="/login" component={LogInFormContainer} />
+      </Switch>
   </div>
 );
 
