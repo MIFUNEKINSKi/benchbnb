@@ -1,15 +1,15 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import { HashRouter } from 'react-router-dom';
 
-import App from './app';
 
-const Root = ({ store }) => (
-  <Provider store={store}>
-    <HashRouter>
-      <App />
-    </HashRouter>
-  </Provider>
+const App = () => (
+  <div>
+    <header>
+      <Link to="/" className="header-link">
+        <h1>Bench BnB</h1>
+      </Link>
+      <GreetingContainer />
+  </div>
 );
 
-export default Root;
+export default App;
